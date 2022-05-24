@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Game Library</string>
+    <string name="add_btn_desc">Add Game</string>
+    <string name="title">Title</string>
+    <string name="developer">Developer</string>
+    <string name="publisher">Publisher</string>
+    <string name="rating_txt">Rating</string>
+    <string name="review_txt">Review</string>
+    <string name="review">Type a review here.</string>
+    <string name="add_btn">Add</string>
+    <string name="update_btn">Update</string>
+    <string name="delete_btn">Delete</string>
+    <string name="delete_all">Delete All</string>
+    <string name="empty_library">No games found. Click (+) to add games!</string>
+    <string name="about">About</string>
+    <string name="miftah">A.Miftachul Hidayat</string>
+    <string name="miftah_nim">21120120120002</string>
+    <string name="daniel">Daniel Ritz</string>
+    <string name="daniel_nim">21120120120021</string>
+    <string name="dimas">Dimas Kenang Surya Ardani</string>
+    <string name="dimas_nim">21120120130061</string>
+    <string name="faizal">Faizal Tri Ardhani Wijaya</string>
+    <string name="faizal_nim">21120120140069</string>
+    <string name="agung">Septian Agung Permana</string>
+    <string name="agung_nim">21120120140129</string>
+    <string-array name="rating_value">
+        <item>1 (Very Bad)</item>
+        <item>2 (Bad)</item>
+        <item>3 (Average)</item>
+        <item>4 (Good)</item>
+        <item>5 (Very Good)</item>
+    </string-array>
+</resources>
