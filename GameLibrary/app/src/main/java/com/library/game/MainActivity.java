@@ -89,14 +89,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.deleteAll) {
-            confirmDialog();
+        switch (item.getItemId()) {
+			case R.id.deleteAll:
+				confirmDialog();
+				return true;
+			case R.id.about:
+				Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+				startActivity(intent);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
         }
-        if (item.getItemId() == R.id.about) {
-            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-            startActivity(intent);
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     void confirmDialog() {
