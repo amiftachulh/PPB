@@ -41,12 +41,16 @@ public class UpdateActivity extends AppCompatActivity {
         }
         db = new DatabaseHandler(UpdateActivity.this);
         updateBtn.setOnClickListener(view -> {
-            title = titleUpdate.getText().toString().trim();
-            developer = developerUpdate.getText().toString().trim();
-            publisher = publisherUpdate.getText().toString().trim();
-            rating = ratingUpdate.getSelectedItem().toString().trim();
-            review = reviewUpdate.getText().toString().trim();
-            db.updateData(id, title, developer, publisher, rating, review);
+            if (titleUpdate.getText().toString().isEmpty()) {
+                Toast.makeText(UpdateActivity.this, "Please fill the game title", Toast.LENGTH_SHORT).show();
+            } else {
+                title = titleUpdate.getText().toString().trim();
+                developer = developerUpdate.getText().toString().trim();
+                publisher = publisherUpdate.getText().toString().trim();
+                rating = ratingUpdate.getSelectedItem().toString().trim();
+                review = reviewUpdate.getText().toString().trim();
+                db.updateData(id, title, developer, publisher, rating, review);
+            }
         });
 
         deleteBtn.setOnClickListener(view -> confirmDialog());
